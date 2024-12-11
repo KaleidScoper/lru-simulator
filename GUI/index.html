@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LRU 页面置换算法模拟</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LRU 页面置换算法模拟</h1>
+        <form id="lru-form">
+            <label for="length">页面访问序列长度:</label>
+            <input type="number" id="length" name="length" required min="1">
+            <label for="max-page">页面编号最大值:</label>
+            <input type="number" id="max-page" name="max-page" required min="1">
+            <label for="frame-count">内存页框数量:</label>
+            <input type="number" id="frame-count" name="frame-count" required min="1">
+            <button type="submit">运行模拟</button>
+        </form>
+        <div id="output">
+            <h2>模拟结果</h2>
+            <pre id="results"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
